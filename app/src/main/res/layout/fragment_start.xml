@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="15dp"
-    android:gravity="center"
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btn_start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="100dp"
-        android:text="Start"
-        android:id="@+id/btn_start"/>
+        android:text="Start" />
 
 </LinearLayout>

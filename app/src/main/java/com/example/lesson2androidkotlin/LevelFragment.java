@@ -41,7 +41,7 @@ public class LevelFragment extends Fragment {
                 gameFragment.setArguments(bundle);
 
                 requireActivity().getSupportFragmentManager().beginTransaction().replace(
-                R.id.main_activity, gameFragment).commit();
+                        R.id.main_activity, gameFragment).commit();
             }
         });
 
