@@ -19,7 +19,7 @@ import com.example.lesson2androidkotlin.databinding.FragmentGameBinding;
 public class GameFragment extends Fragment {
 
     FragmentGameBinding binding;
-    String firstImage, secondImage, thirdImage, fourImage, answer, prompt;
+    String firstImage, secondImage, thirdImage, fourImage, answer, prompt, level;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,6 +38,9 @@ public class GameFragment extends Fragment {
         fourImage = getArguments().getString("fourImage");
         answer = getArguments().getString("answer");
         prompt = getArguments().getString("prompt");
+        level = getArguments().getString("level");
+
+        binding.tvLevel.setText(level);
 
         Glide.with(requireView()).load(firstImage).into(binding.ivFirstImage);
         Glide.with(requireView()).load(secondImage).into(binding.ivSecondImage);
